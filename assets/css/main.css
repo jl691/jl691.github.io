@@ -159,7 +159,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		text-decoration: none;
-		border-bottom: dotted 1px;
+		padding-left: 25px
 	}
 
 		a:hover {
@@ -200,7 +200,7 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 1.75em;
+		font-size: 2em;
 		line-height: 1.5em;
 	}
 
@@ -227,7 +227,7 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		h2 {
-			font-size: 1.25em;
+			font-size: 1.3em;
 		}
 
 		h3 {
@@ -325,7 +325,8 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #828282;
+		/* color: #828282; */
+		color: #000
 	}
 
 	blockquote {
@@ -2767,7 +2768,8 @@ input, select, textarea {
 			}
 
 		.spotlight .content {
-			width: 70%;
+			width: 100%;
+			/* text-align: left */
 		}
 
 			.spotlight .content > :last-child {
@@ -2917,7 +2919,7 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		padding: 4.5em 0 2.5em 0 ;
+		padding: 4.5em 0 1.5em 0 ;
 		background-color: #ffffff;
 		border-bottom: solid 2px #eeeeee;
 	}
@@ -3608,10 +3610,36 @@ input, select, textarea {
 
 	}
 
+	/* Navigation bar */
+
+	#nav-bar {
+		background-color: #808bed;
+		color: #FFF;
+		justify-content: right;
+		padding: 2em 2em ;
+		font-size: 22px;
+		padding-left: 100px;
+		padding-right: 150px;
+		text-align:right
+		
+	}
+
+	/* Selected Works title */
+
+	#sel-works {
+		text-align: left;
+		font-weight: bold;
+		padding: 110px;
+		color: #000;
+		font-size: 3em
+		
+	}
+
 /* Header */
 
 	#header {
-		background-color: #4696e5;
+		/* background-color: #919aed; */
+		background-color: #808bed;
 		color: #d1e5f9;
 		padding: 4.5em 0 2.5em 0 ;
 		-moz-align-items: center;
@@ -3626,11 +3654,11 @@ input, select, textarea {
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		background-image: url("images/overlay.png"), url("images/pattern-size1.svg");
+		/* background-image: url("images/overlay.png"), url("images/pattern-size1.svg"); */
 		background-position: top left, center center;
 		background-attachment: fixed, fixed;
 		background-size: auto, cover;
-		height: 100vh;
+		height: 75vh;
 		min-height: 35em;
 	}
 
@@ -3824,14 +3852,18 @@ input, select, textarea {
 			border-bottom-color: rgba(255, 255, 255, 0.25);
 		}
 
+		/* OVER HERE */
 		#header h1 {
-			font-size: 3.25em;
+			font-size: 4em;
 			font-weight: bold;
-			margin-bottom: 0.5em;
+			margin-bottom: 2em;
+			line-height: 1.2em;
+			padding: 44px;
+			letter-spacing: .7px
 		}
 
 		#header p {
-			font-size: 1.5em;
+			font-size: 2.5em;
 			line-height: 1.35em;
 		}
 
@@ -3849,12 +3881,13 @@ input, select, textarea {
 			-ms-transform: translateX(0);
 			transform: translateX(0);
 			opacity: 1;
-			text-align: right;
-			margin: -3.5em 4em 0 0;
+			text-align: left;
+			/* margin:  4em -3.5em 0 0;  */
+			padding: 60px
 		}
 
 			#header .content > :last-child {
-				margin-bottom: 0;
+				margin-bottom: 1;
 			}
 
 			#header .content .actions {
@@ -3885,14 +3918,14 @@ input, select, textarea {
 				-webkit-transition-delay: 0.75s;
 				-ms-transition-delay: 0.75s;
 				transition-delay: 0.75s;
-				opacity: 1;
+				opacity: o;
 			}
 
 		@media screen and (max-width: 1280px) {
 
-			#header {
+			/* #header {
 				background-image: url("images/overlay.png"), url("images/pattern-size2.svg");
-			}
+			} */
 
 		}
 
@@ -4036,7 +4069,7 @@ input, select, textarea {
 		}
 
 			body.is-preload #header .image img {
-				opacity: 0;
+				opacity: 1;
 			}
 
 	@media screen and (max-width: 980px) and (orientation: portrait) {
