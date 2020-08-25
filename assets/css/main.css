@@ -3668,6 +3668,21 @@ input, select, textarea {
 		
 	}
 
+.case-study {
+	font-weight: normal;
+	line-height: 1em;
+	margin: 0 0 1em 0;
+	letter-spacing: -0.125em;
+}
+
+.case-study h1{
+	font-weight: bold;
+	font-size: 2em;
+	padding: 95px;
+	padding-top: 60px;
+	letter-spacing: .6px
+}
+
 /* Header */
 
 	#header {
