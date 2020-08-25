@@ -2411,10 +2411,14 @@ input, select, textarea {
 		list-style: decimal;
 		margin: 0 0 2em 0;
 		padding-left: 1.25em;
+		
+		
 	}
 
 		ol li {
 			padding-left: 0.25em;
+			padding-bottom: 0.75em
+		
 		}
 
 	ul {
@@ -3671,16 +3675,57 @@ input, select, textarea {
 .case-study {
 	font-weight: normal;
 	line-height: 1em;
-	margin: 0 0 1em 0;
-	letter-spacing: -0.125em;
+	margin: 0 0 0 0;
+
+	/* letter-spacing: 0.1px */
 }
 
 .case-study h1{
 	font-weight: bold;
 	font-size: 2em;
-	padding: 95px;
-	padding-top: 60px;
-	letter-spacing: .6px
+	padding: 95px 95px 70px 95px;
+	letter-spacing: .3px;
+	margin: 0 0 0 0;
+}
+
+.cs-section {
+	padding: 0px 95px 0px 95px;
+	color: black;
+	width:inherit
+
+}
+
+.cs-section .section-title{
+	font-size: 1.5em;
+	font-weight:bold
+}
+
+.cs-section p{
+	padding-top: 0px;
+	font-size:1.25em
+}
+
+.cs-section  li{
+	font-size: 1.25em
+}
+
+.cs-section b{
+	color:black;
+	font-size:inherit
+
+}
+
+.cs-section .cs-img{
+	width: 100%;
+}
+
+.cs-section img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	/* media query to make image responsive? */
+
 }
 
 /* Header */
