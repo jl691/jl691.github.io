@@ -16,7 +16,7 @@
 <body class="is-preload">
 
     <nav id="nav-bar">
-        <div id="logo"><img src="LOGO1.png"></div>
+        <div id="logo"> <a href="https://jl691.github.io/"><img src="images/LOGOblack.png"> </a></div>
         <a href="#">WORK</a>
         <a href="#">RESUME</a>
         <a href="#">CONTACT</a>
@@ -30,19 +30,44 @@
             Introduction
         </h2>
         <p>
-            For my first case study, I found a free UI/UX course from
-            Students Who Design. It includes three lecture videos and three videos in this self-run course. The first
-            assignment in the course included exploration of Facebook Messenger
-            mobile (version 278.0).
+            For my first case study, I found a free UI/UX course from<a href="https://www.studentswho.design/">Students
+                Who Design</a>. It includes three lecture videos and three videos in this self-paced course. The goal of
+            the course is a redesign of Facebook Messenger mobile (version 278.0).
         </p>
     </section>
 
+    <div class="role-container">
+        <div class="roleBox">
+            <h4>MY ROLE</h4>
+            <p>User Research</p>
+            <p>Wireframe</p>
+            <p>Prototyping</p>
+            <p>Visual Design</p>
+        </div>
+        <div class="roleBox">
+            <h4>TEAM</h4>
+            <p>Just me : )</p>
+        </div>
+        <div class="roleBox">
+            <h4>TOOLS</h4>
+            <p>Figma</p>
+            <p>Affinity Mapping</p>
+        </div>
+        <div class="roleBox">
+            <h4>TIMELINE</h4>
+            <p>3 weeks</p>
+        </div>
+    </div>
+
+
+
+
     <section class="cs-section">
         <h2 class="section-title">
-            Hypothesis
+            The Challenge
         </h2>
         <p>
-            A hypothesis I had was that Message Requests could be improved to complete more interactions. I went
+            How can Message Requests be improved to complete more interactions? I went
             into my user interviews with an objective to find the pain points of Message Requests on Messenger
             mobile.
         </p>
@@ -56,43 +81,30 @@
         <p>After my interviews, I came away with these insights: </p>
 
         <ol>
-            <li> <b>The level of visibility of Message Requests needs to be adjusted for its purpose.</b> So out of the
-                way, but
-                not ‘hidden’. Some people found Message requests hard to find, while also appreciating the
-                separation of
-                it from the ‘normal’ inbox.
+            <li> <b>The level of visibility of Message Requests needs to be adjusted for its purpose.</b> Some people
+                found Message Requests hard to find, while also appreciating theseparation of Requests from the Chats
+                inbox, where all their friends are.
             </li>
 
-            <li> <b>People only check Message Requests with a specific purpose in mind </b>(whether it be a
-                notification,
-                respond to a potential club member, buying or selling on Marketplace, looking for a roommate, to
-                friend
-                a girlfriend’s dad, to plan a surprise party). One anecdote from an interviewee involved a sister of
-                a
+            <li> <b>People only check Message Requests with a specific purpose in mind.</b> Examples of purposes might
+                be to respond to a notification, to buy or sell on Marketplace, to look for a roommate, to get in
+                contact with your girlfriend's dad, or to plan a surprise party).
+                <!-- One anecdote from an interviewee involved a sister of a
                 coworker planning a surprise party. Her message went to Requests, where it sat unread for a week. It
                 took a message from someone the interviewee was already friends with to get him to see the Request,
-                which he responded to immediately, since he felt bad about missing the message.
+                which he responded to immediately, since he felt bad about missing the message. -->
             </li>
-            <li> <b>People don’t mind responding to strangers if the message has a purpose and the person is a
-                    person/is not a bot. </b>See purposes mentioned above.
+            <li> <b>People don’t mind responding to strangers if the message has a purpose and the person is not a bot
+                    or spam.</b> See purposes mentioned above.
             </li>
-            <li> <b>People have unwanted contact from people in MR.</b>
-                Insight: Sorting through the messages depends on who they are and what they want, in order for FB
-                filtering to be accurate (especially when regarding spam). Messenger is good at hiding away the
-                unwanted
-                stuff,( but ultimately it’s up to people to decide what to do. There is no way a message from an
-                estranged family member will go to spam)
+            <li> <b>People have unwanted contact from people in Message Requests.</b> Messenger tries to keep as much
+                unwanted contact away from the user with the Spam folder inside Message Requests, but there is no way
+                Messenger has an algorithm that determines your estranged relative should go into the Spam folder.
             </li>
         </ol>
 
-        <div class="cs-img"> <img src="images/testImage1.jpg"> </div>
-    </section>
-
-    <section class="cs-section">
-        <h2 class="section-title">
-            People Problem Statement
-        </h2>
-        <p> People would respond to message Requests, but can’t because:</p>
+        <p> After processing the information from user interviews, I refined my hypothesis.</p>
+        <p> People would respond to Message Requests, but can’t because:</p>
         <ol>
             <li>
                 <b>Message Request visibility needs to be adjusted. </b> One person said they felt ‘scattered’ trying to
@@ -106,14 +118,23 @@
                 Requests, would be if they were looking for a roommate or selling/buying on Marketplace.
             </li>
         </ol>
+
+        <!-- <div class="cs-img"> <img src="images/testImage1.jpg"> </div> -->
     </section>
+
+    <!-- <section class="cs-section">
+        <h2 class="section-title">
+            People Problem Statement
+        </h2>
+       
+    </section> -->
 
     <section class="cs-section">
         <h2 class="section-title">
-            Brainstorming Features
+            Brainstorming Solutions
         </h2>
         <p>
-            I brainstormed features to solve the people problem stated above. I picked an (initial) top three features
+            I brainstormed features to solve the problem stated above. These are the (initial) top three features
             after I did a SWOT analysis and looked at feasability/impact:
         </p>
         <ol>
@@ -122,44 +143,55 @@
                 the request showed a clear purpose.
             </li>
             <li> <b>Group Message Requests similarly to how Marketplace chats are grouped. </b>Marketplace chat grouping
-                is
-                a feature in Facebook Messenger, where if someone messaged you about an item, the Marketplace chat
-                would pop to the the Chats list. I was thinking of applying this to Message Requests; that way,
-                Message Requests will only be at the top of the Chats if someone sends them a request.</li>
-            <!-- INSERT IMAGE OF MARKETPLACE CHAT FEATURE -->
+                is a feature in Facebook Messenger, where if someone messaged you regarding buying/selling on
+                Marketplace, the Marketplace chat would pop to top of the Chats list. I was thinking of applying this to
+                Message Requests; that way,
+                Message Requests will only be at the top of the Chats if someone sends them a request.
+            </li>
+            <!-- <div class="cs-img"> <img src="images/marketplace.JPG"> </div> -->
             <li> <b>Add a red badge icon to the Spam folder within Message Requests. </b> From user research, people
-                said
-                that they liked a spam-free inbox. But at the same time, people found it awkward responding to Message
-                Requests weeks later. One person had an anecdote: I happened to venture into Message Requests. When I
-                clicked on the Spam folder,
-                I found that a message from someone from my hometown, who was going to the same college as me, and
-                wanted to join the same club, had messaged me two years ago! </li>
+                said that they liked a spam-free inbox. But at the same time, people found it awkward responding to
+                Message
+                Requests weeks later. One person I interviewed told me that had an anecdote: when she checked the Spam
+                folder, she found that someone from her hometown, who was going to the same college as her, and
+                wanted to join the same club, had messaged her two years ago. </li>
         </ol>
-        <p> I started sketching out these features and what they might look like on the screen. During the process, I
+        <!-- NEED TO HAVE CAPTION -->
+        <div class="imgDisplayContainer">
+            <div class="cs-img"> <img src="images/postits.JPG"> </div>
+        </div>
+
+        <p> I started sketching out these features and what they might look like. During the process, I
             wasn't entirely satisfied with the solutions that I brainstormed. I was doing some self-reflecting during
-            each stage of the design process (such as after I conducted user interviews, I wrote a few notes on what I
-            should have done differently), but I wanted guidance and feedback as well. I called my friend, Martina, who
+            each stage of the design process, but I wanted guidance and feedback as well. I called my friend, Martina,
+            who
             is a UI/UX designer.
         </p>
-        <!-- INSERT IMAGE OF INITIAL SKETCHES -->
+        <!-- NEED TO HAVE CAPTION -->
+        <div class="imgDisplayContainer">
+            <div class="cs-img"> <img src="images/MRsketch.png"> </div>
+            <div class="cs-img"> <img src="images/spamSketch.png"> </div>
+        </div>
+
         <p>
             Some key lessons I learned from Martina is to always remember the problem you are trying to solve and who
             you are trying to solve it for. When I told her about the 'stamp' feature for Message Requests, she asked,
             "What would the stamps accomplish without a person’s profile picture and their identifier? Why would you
-            need stamps in the context of MR?". I also talked to her about my uncertainty in the decisions I've made in
+            need stamps in the context of Message Requests?". I also talked to her about my uncertainty in the decisions
+            I've made in
             the design process. Martina reassured me by saying that you can always iterate again and again, since at
-            different stages of the design process, new information will come to you. That made me realize if I feel
-            like the train I'm on is headed the wrong way, I can always turn back or course correct.
+            different stages of the design process, new information will come to you. That made me realize if I feel I
+            am headed the wrong way, I can always turn back or course correct.
         </p>
 
     </section>
     <section class="cs-section">
         <h2 class="section-title">
-            Brainstorming Features...Again
+            Brainstorming Solutions...Again
         </h2>
 
         <p> After reflecting with my friend about the design direction I was headed, I decided to revisit the list of
-            solution features I brainstormed. I scratched the stamp feature because while trying to answer 'what would
+            solution features I brainstormed. I scratched the stamp feature, because while trying to answer 'what would
             stamps accomplish in the context of Message Requests', I found my answers were shoddy at best. I was hoping
             they would be eye-catching and therefore people would open up the request and respond to it. I realized the
             main problem was adjusting the visibility of Message Requests.
@@ -169,28 +201,58 @@
             of Message Requests that gets in the way of people from responding to them. I decided to add notifications
             to the Spam folder, and to move Message Requests to the main Chats view.</p>
 
-        <!-- Using the combination of the spam count notification with increasing the visibility of MR will address the problem of missed connections. There are a lot of anecdotes about hidden or missed messages, or finding a message weeks later and feeling awkward responding to it because of how much time had passed. In addition, according to my user research, people do like the MR spam functionality and how it keeps the unwanted messages and spam hidden away.
-
-What makes MR hard to find is that it is 2 clicks away, and not something people typically check. In addition, the spam filtering system isn’t perfect. Yes, it filters out some spam most of the time, but it also tucks away actually important messages as well. I think addressing both of these problems, while maintaing the aspects of the feature people actually like, will improve Messenger and solve my people problem.
- -->
     </section>
 
-    <section>
-        <h2> Wireframes</h2>
+    <section class="cs-section">
+        <h2 class="section-title"> Wireframes</h2>
         <p>
-            <!-- Need to look at Marketplace grouping feature to see if people actually like it. In addition, might need to come up with an icon to indicate Message requests, if they have one for Marketplace
-Placement of the red bubble for the spam folder, or should the blue dot be used?
-Making clear the difference between MR, Marketplace, and normal chats
-Think harder on the hierarchy of MR → spam. If you get spam, will that bump up the MR chat up to the top?
- -->
+            I had a few entry point, middle section, and end point scenarios and user flows that I tested out. I decided
+            to place Message Requests at the bottom navigation bar to make Requests more visible. One of the questions I
+            asked during my interviews was 'Show me how to get to Message Requests'. Users often first clicked on the
+            'People' tab at the navigation bar. The badge for Message Requests notifications will always be visible at
+            the bottom.
+
+            <!-- I need to do a better job at explaining why i chose what i did -->
+
         </p>
-        <!-- INSERT PICTURES OF WIREFRAMES -->
+        <p>
+            For the Spam notifications, I kept it consistent with how Messenger already shows unread chats.
+        </p>
+
+        <!-- NEED TO HAVE CAPTION -->
+        <!-- explain how you picked the MR feature and adjusted visibility -->
+        <div class="imgDisplayContainer">
+            <div class="featureBoxImg"> <img src="images/Messenger - Home1.png"> </div>
+            <div class="featureBoxImg"> <img src="images/Messenger - Home2.png"> </div>
+            <div class="featureBoxImg"> <img src="images/Messenger - Home3.png"> </div>
+        </div>
+
+        <p> EXPLANATIONS OF DECISIONS HERE</p>
+        <div class="imgDisplayContainer">
+            <div class="featureBoxImg"> <img src="images/Messenger - Spam1.png"> </div>
+            <div class="featureBoxImg"> <img src="images/Messenger - Spam1.1.png"> </div>
+            <div class="featureBoxImg"> <img src="images/Messenger - Message Requests2.1.png"> </div>
+        </div>
     </section>
-    <section>
-        <h2> Prototype</h2>
+    <section class="cs-section">
+        <h2 class="section-title"> Prototype</h2>
+
+        <p>
+            Here is a prototype of the notification features. We are opening a Spam message in Message Requests.
+        </p>
     </section>
-    <section>
-        <h2> Reflecitons</h2>
+    <section class="cs-section">
+        <h2 class="section-title">What I Learned</h2>
+        <p>
+            The main takeaway from this case study is that I learned a design process. I learned one way to come up with
+            a People Problem, gained knowledge about user research, familiarized myself with Figma, and learned how to
+            wireframe and prototype. During these steps, I realized that it is important to document your progress and
+            to be able to articulate clearly why I went with one feature, design, user flow, etc. over another.
+
+            I also learned that design is about; it's not just about me or one individual person. That's why it's
+            important to listen to stories, and to keep awareness of your biases. I need to make decisions informed by
+            the people, not based off of what I think is flashy or what <i>I</i> think people would want.
+        </p>
     </section>
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>

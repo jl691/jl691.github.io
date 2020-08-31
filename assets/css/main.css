@@ -3664,8 +3664,8 @@ input, select, textarea {
 	/* Navigation bar */
 
 	#nav-bar {
-		background-color: #808bed;
-		color: #FFF;
+		background-color: #aeb6ff;
+		color: #000;
 		padding: 2em 2em ;
 		font-size: 22px;
 		padding-left: 100px;
@@ -3729,13 +3729,58 @@ input, select, textarea {
 	color:black;
 	font-size:inherit;
 
-
 }
 
+.role-container{
+	background-color: #aeb6ff;
+	flex-basis:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	padding-left:95px;
+	padding-right:95px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top:15px;
+	margin-bottom:15px
+}
+
+.role-container .roleBox{
+	flex:1;
+}
+.role-container p{
+	margin-top:5px;
+	margin-bottom:5px;
+	color:black;
+	font-size:20px
+}
+
+.role-container h4{
+	font-size: 18px;
+	color: rgb(97, 97, 97)
+}
 .cs-section .cs-img{
 	width: 100%;
 	padding-top: 75px;
 	padding-bottom: 75px;
+
+}
+
+.imgDisplayContainer{
+	display: flex;
+	justify-content:space-around;
+	background-color:#aeb6ff;
+	margin-top:30px;
+	margin-bottom:30px;
+	width: 100vw;
+	position: relative;
+	left: calc(-50vw + 50%);
+
+}
+
+.featureBoxImg{
+	flex:1;
+	margin:35px
 
 }
 
@@ -3749,7 +3794,7 @@ input, select, textarea {
 
 }
 
-/* actually need to change nav bar height to be resonsive/restricted */
+/* actually need to change nav bar height to be resopnsive/restricted */
 #logo{
 	float:left;
 	width:5%;
@@ -3764,7 +3809,7 @@ input, select, textarea {
 
 	#header {
 		/* background-color: #919aed; */
-		background-color: #808bed;
+		background-color: #aeb6ff;
 		color: #d1e5f9;
 		padding: 4.5em 0 2.5em 0 ;
 		-moz-align-items: center;
@@ -3961,7 +4006,7 @@ input, select, textarea {
 		}
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: #ffffff;
+			color: #000;
 		}
 
 		#header blockquote {
