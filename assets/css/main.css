@@ -3676,6 +3676,19 @@ input, select, textarea {
 		
 	}
 
+	#nav-bar-cs {
+		background-color:#fff;
+		color: #000;
+		padding: 2em 2em ;
+		font-size: 22px;
+		padding-left: 100px;
+		padding-right: 150px;
+		text-align:right;
+		height:auto;
+		display:inline-block
+		
+	}
+
 	/* Selected Works title */
 
 	#sel-works {
@@ -3688,6 +3701,8 @@ input, select, textarea {
 		
 	}
 
+/* Case study classes/ids */
+
 .case-study {
 	font-weight: normal;
 	line-height: 1em;
@@ -3699,7 +3714,7 @@ input, select, textarea {
 .case-study h1{
 	font-weight: bold;
 	font-size: 2em;
-	padding: 95px 95px 70px 95px;
+	padding: 50px 95px 70px 95px;
 	letter-spacing: .3px;
 	margin: 0 0 0 0;
 }
@@ -3718,7 +3733,10 @@ input, select, textarea {
 
 .cs-section p{
 	padding-top: 0px;
-	font-size:1.25em
+	font-size:1.25em;
+	/* display: inline-block; */
+	/* width: 45%; */
+
 }
 
 .cs-section  li{
@@ -3759,6 +3777,8 @@ input, select, textarea {
 	font-size: 18px;
 	color: rgb(97, 97, 97)
 }
+
+/* container that holds the img below */
 .cs-section .cs-img{
 	width: 100%;
 	padding-top: 75px;
@@ -3766,15 +3786,56 @@ input, select, textarea {
 
 }
 
+figcaption {
+	text-align:center;
+	padding:5px;
+
+}
+
+.cs-section .cs-img-left-med{
+	width: 50%;
+	/* padding-top: 45px; */
+	padding-bottom: 75px;
+	padding-right:80px;
+	float:left;
+	/* display: block */
+	
+}
+.cs-section .cs-img-right-small{
+	width: 30%;
+	/* padding-top: 45px; */
+	padding-bottom: 75px; 
+	padding-left:80px;
+	float:right
+}
+.cs-section .cs-img-right-med{
+	width: 47%;
+	/* padding-top: 45px; */
+	padding-bottom: 75px; 
+	padding-left:80px;
+	float:right
+}
+/* add in media query */
+.cs-section img{
+	/* display: inline-block; */
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	border-radius: 12px
+
+}
+
 .imgDisplayContainer{
 	display: flex;
-	justify-content:space-around;
 	background-color:#aeb6ff;
 	margin-top:30px;
 	margin-bottom:30px;
 	width: 100vw;
 	position: relative;
 	left: calc(-50vw + 50%);
+
+	align-items: center;
+	justify-content: center;
 
 }
 
@@ -3784,15 +3845,18 @@ input, select, textarea {
 
 }
 
-/* add in media query */
-.cs-section img{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	border-radius: 12px
+.prototype-video{
+	width:35%;
 
 }
+
+.video-container{
+	align-items: center;
+	justify-content: center;
+	display:flex;
+	margin-bottom:35px
+}
+
 
 /* actually need to change nav bar height to be resopnsive/restricted */
 #logo{
